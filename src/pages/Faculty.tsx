@@ -9,25 +9,27 @@ import { ArrowRight, Award, BookOpen, GraduationCap, Users } from "lucide-react"
 const Faculty = () => {
   const faculty = [
     {
-      name: "Er. D.C. Gupta",
-      qualification: "B.Tech, M.Tech",
-      specialization: "Physics & Mathematics",
-      experience: "15+ Years Teaching Experience",
+      name: "D.C. Gupta",
+      qualification: "M.Tech - Director",
+      specialization: "Physics Educator",
+      experience: "28+ Years Teaching Experience",
       achievements: [
-        "Author - Disha Publication, New Delhi",
-        "Expert in IIT-JEE Physics",
-        "Mentored 1000+ successful students",
+        "Author of IIT/NEET Books - Disha Publication, Delhi",
+        "Original approach in concept analysis",
+        "Helped thousands achieve IIT & NEET dreams",
+        "His unique style makes Physics easy & interesting",
       ],
     },
     {
       name: "Er. Harsh Gupta",
-      qualification: "B.Tech - IIT Delhi",
-      specialization: "Chemistry & Mathematics",
-      experience: "8+ Years Teaching Experience",
+      qualification: "B.Tech (IIT Delhi) - Managing Director",
+      specialization: "Chemistry Expert",
+      experience: "Expert in JEE & NEET Chemistry",
       achievements: [
-        "IIT Delhi Graduate",
-        "Specialized in JEE Advanced",
-        "100% concept clarity approach",
+        "Introduced latest study material & methodology",
+        "Developed magical methods for Chemistry",
+        "Makes subject easy and interesting",
+        "\"Chemistry is not about wrote learning\"",
       ],
     },
   ];

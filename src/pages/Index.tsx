@@ -57,10 +57,10 @@ const Index = () => {
   ];
 
   const stats = [
-    { value: "500+", label: "Students Enrolled" },
-    { value: "95%", label: "Success Rate" },
-    { value: "10+", label: "Years Experience" },
-    { value: "100%", label: "Scholarship Available" },
+    { value: "1000+", label: "Students Trained" },
+    { value: "28+", label: "Years Experience" },
+    { value: "1 Crore", label: "Scholarship Worth" },
+    { value: "99.62%", label: "JEE Main Top Score" },
   ];
 
   return (
@@ -81,14 +81,15 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-slide-up">
-              Gyan Gurukulam
+              Gyan
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              A Coaching Led by IITian
+              A Premier Coaching for IIT-JEE & NEET
             </p>
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              Your journey to IIT, NEET, and AMU success starts here. 
-              Expert guidance from IIT Delhi alumni with proven track record.
+              VIII, IX, X, Foundation | XI, XII, Dropper
+              <br />
+              Join India's finest Short-cut Methods & Techniques
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.3s" }}>
@@ -255,8 +256,8 @@ const Index = () => {
               Ready to Start Your Journey?
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
-              Join Gyan Gurukulam today and take the first step towards your dream career. 
-              Limited seats available for 2026 batches!
+              Join Gyan today and take the first step towards your dream career. 
+              Learn India's finest Short-cut Methods & Techniques!
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="xl" asChild>
