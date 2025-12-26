@@ -37,8 +37,8 @@ const Faculty = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "IIT Alumni",
-      description: "Faculty from premier institutions of India",
+      title: "28+ Years Experience",
+      description: "Decades of teaching excellence",
     },
     {
       icon: BookOpen,
@@ -169,7 +169,7 @@ const Faculty = () => {
               Learn from the Best
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
-              Join our batches and get mentored by IIT alumni who have helped 
+              Join our batches and get mentored by experienced educators who have helped 
               thousands of students achieve their dreams.
             </p>
             <Button variant="hero" size="xl" asChild>

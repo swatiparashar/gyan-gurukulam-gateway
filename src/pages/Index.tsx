@@ -110,8 +110,8 @@ const Index = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: "0.4s" }}>
               <TrustBadge
                 icon={GraduationCap}
-                title="IITian Faculty"
-                description="Learn from the best"
+                title="Expert Faculty"
+                description="28+ years experience"
               />
               <TrustBadge
                 icon={Award}
@@ -194,8 +194,8 @@ const Index = () => {
               />
               <ul className="space-y-4">
                 {[
-                  "IIT Delhi Alumni Faculty with Industry Experience",
-                  "Affordable Fee Structure for All Students",
+                  "28+ Years of Teaching Excellence",
+                  "Published Authors - Disha Publication",
                   "Weekly Scholarship Tests Every Sunday",
                   "Regular Batches for 2026 JEE/NEET",
                   "Personalized Attention & Doubt Clearing",
