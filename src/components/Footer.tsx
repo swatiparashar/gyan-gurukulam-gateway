@@ -42,16 +42,16 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-display font-bold">
-                  Gyan Gurukulam
+                  Gyan
                 </span>
                 <span className="text-xs text-primary-foreground/70">
-                  A Coaching Led by IITian
+                  A Premier Coaching for IIT-JEE & NEET
                 </span>
               </div>
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               Empowering students to achieve their dreams through quality education 
-              and expert guidance from IIT alumni.
+              and expert guidance. 28+ years of teaching excellence.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -131,18 +131,18 @@ const Footer = () => {
                   <a href="tel:7906725040" className="block hover:text-primary transition-colors">
                     7906725040
                   </a>
-                  <a href="tel:9045754600" className="block hover:text-primary transition-colors">
-                    9045754600
+                  <a href="tel:9411418190" className="block hover:text-primary transition-colors">
+                    9411418190
                   </a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@gyanGurukulam.com"
+                  href="mailto:info@gyancoaching.com"
                   className="text-sm text-primary-foreground/80 hover:text-primary transition-colors"
                 >
-                  info@gyanGurukulam.com
+                  info@gyancoaching.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -160,7 +160,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} Gyan Gurukulam. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Gyan Coaching. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <Link to="/privacy" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy
