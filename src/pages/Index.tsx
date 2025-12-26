@@ -77,7 +77,7 @@ const Index = () => {
             {/* Scholarship Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-success/20 rounded-full text-success-foreground mb-6 animate-fade-in backdrop-blur-sm border border-success/30">
               <Star className="w-4 h-4 fill-current" />
-              <span className="text-sm font-semibold">Scholarship up to 100% Available!</span>
+              <span className="text-sm font-semibold">Scholarship Upto 100% Available!</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-slide-up">
@@ -115,7 +115,7 @@ const Index = () => {
               />
               <TrustBadge
                 icon={Award}
-                title="100% Scholarship"
+                title="Upto 100% Scholarship"
                 description="Weekly tests every Sunday"
               />
               <TrustBadge
@@ -240,7 +240,7 @@ const Index = () => {
               {/* Floating Badge */}
               <div className="absolute -bottom-4 -right-4 bg-success text-success-foreground px-6 py-3 rounded-xl shadow-lg font-semibold animate-float">
                 <Medal className="w-5 h-5 inline mr-2" />
-                100% Scholarship
+                Upto 100% Scholarship
               </div>
             </div>
           </div>
