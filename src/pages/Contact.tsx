@@ -51,18 +51,18 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Our Location",
-      details: ["Avantika II, Ramghat Road", "Aligarh, Uttar Pradesh"],
+      details: ["Avantika-II, Ramghat Road", "Aligarh, Uttar Pradesh"],
     },
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["9528220991", "7906725040", "9045754600"],
+      details: ["9528220991", "7906725040", "9411418190"],
       isPhone: true,
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@gyanGurukulam.com"],
+      details: ["info@gyancoaching.com"],
       isEmail: true,
     },
     {

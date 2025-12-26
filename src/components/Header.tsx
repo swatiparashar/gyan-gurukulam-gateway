@@ -29,10 +29,10 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-lg lg:text-xl font-display font-bold text-foreground">
-                Gyan Gurukulam
+                Gyan
               </span>
               <span className="text-[10px] lg:text-xs text-muted-foreground font-medium -mt-1">
-                A Coaching Led by IITian
+                A Premier Coaching for IIT-JEE & NEET
               </span>
             </div>
           </Link>
