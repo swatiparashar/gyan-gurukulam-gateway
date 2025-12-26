@@ -40,11 +40,10 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "2015", event: "Founded by Er. D.C. Gupta with a vision to provide quality education" },
-    { year: "2017", event: "Expanded to include IIT-JEE and NEET programs" },
-    { year: "2019", event: "Er. Harsh Gupta (IIT Delhi) joins the faculty" },
-    { year: "2021", event: "Introduced 100% scholarship program" },
-    { year: "2023", event: "500+ students enrolled, 95% success rate achieved" },
+    { year: "1996", event: "Founded by D.C. Gupta with a vision to provide quality education" },
+    { year: "2000", event: "Expanded to include IIT-JEE and NEET programs" },
+    { year: "2022", event: "Er. Harsh Gupta (IIT Delhi) joins as Managing Director" },
+    { year: "2025", event: "Introduced Upto 100% Scholarship program - GGST" },
   ];
 
   return (
@@ -63,7 +62,7 @@ const About = () => {
               Our Story
             </h1>
             <p className="text-lg text-primary-foreground/80">
-              Building futures through quality education and dedicated mentorship since 2015
+              Building futures through quality education and dedicated mentorship since 1996
             </p>
           </div>
         </div>
@@ -136,7 +135,7 @@ const About = () => {
           <SectionHeading
             badge="Our Values"
             title="What We Stand For"
-            subtitle="The principles that guide everything we do at Gyan Gurukulam"
+            subtitle="The principles that guide everything we do at Gyan"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
@@ -203,18 +202,18 @@ const About = () => {
               <GraduationCap className="w-10 h-10 text-primary-foreground" />
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-6">
-              Led by IIT Alumni
+              Led by Experienced Educators
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Our faculty includes graduates from India's premier institutions. They bring 
-              real-world experience, exam strategies, and a deep understanding of what it 
+              With 28+ years of teaching experience and expertise in Physics & Chemistry, 
+              our faculty brings proven methods and deep understanding of what it 
               takes to crack competitive exams.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6">
                 <Award className="w-10 h-10 text-primary-foreground mx-auto mb-3" />
-                <h4 className="font-semibold text-primary-foreground">IIT Delhi Alumni</h4>
-                <p className="text-sm text-primary-foreground/70 mt-1">Expert faculty from top institutions</p>
+                <h4 className="font-semibold text-primary-foreground">28+ Years Experience</h4>
+                <p className="text-sm text-primary-foreground/70 mt-1">Decades of teaching excellence</p>
               </div>
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6">
                 <BookOpen className="w-10 h-10 text-primary-foreground mx-auto mb-3" />
