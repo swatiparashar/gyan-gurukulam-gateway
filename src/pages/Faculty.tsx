@@ -23,8 +23,8 @@ const Faculty = () => {
     {
       name: "Er. Harsh Gupta",
       qualification: "B.Tech (IIT Delhi) - Managing Director",
-      specialization: "Chemistry Expert",
-      experience: "Expert in JEE & NEET Chemistry",
+      specialization: "Chemistry & Mathematics Expert",
+      experience: "Expert in JEE & NEET Chemistry + Mathematics",
       achievements: [
         "Introduced latest study material & methodology",
         "Developed magical methods for Chemistry",
