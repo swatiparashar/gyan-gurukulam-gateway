@@ -43,7 +43,7 @@
     --warning: 40 75% 50%;
     --warning-foreground: 40 80% 15%;
 
-    --cta: 215 60% 45%;
+    --cta: 350 65% 40%;
     --cta-foreground: 0 0% 100%;
 
     --border: 240 4% 83%;
@@ -62,17 +62,17 @@
     --sidebar-ring: 333 71% 50%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(215 60% 45%) 0%, hsl(215 55% 55%) 100%);
-    --gradient-hero: linear-gradient(160deg, hsl(215 60% 35%) 0%, hsl(215 55% 50%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(350 65% 40%) 0%, hsl(350 55% 50%) 100%);
+    --gradient-hero: linear-gradient(160deg, hsl(350 65% 35%) 0%, hsl(350 55% 45%) 100%);
     --gradient-success: linear-gradient(135deg, hsl(165 45% 40%) 0%, hsl(165 40% 50%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(215 60% 45%) 0%, hsl(215 55% 55%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 97%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(350 65% 40%) 0%, hsl(350 55% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(350 10% 97%) 100%);
 
     /* Shadows */
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
     --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
     --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
-    --shadow-glow: 0 0 24px hsl(215 60% 45% / 0.15);
+    --shadow-glow: 0 0 24px hsl(350 65% 40% / 0.15);
     --chart-1: 328 85% 70%;
     --chart-2: 351 94% 71%;
     --chart-3: 327 87% 81%;
@@ -122,7 +122,7 @@
     --warning: 40 70% 50%;
     --warning-foreground: 0 0% 100%;
 
-    --cta: 215 55% 55%;
+    --cta: 350 55% 50%;
     --cta-foreground: 0 0% 100%;
 
     --border: 240 5% 33%;
