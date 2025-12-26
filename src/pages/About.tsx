@@ -116,7 +116,7 @@ const About = () => {
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-secondary/50 rounded-xl">
-                  <div className="text-2xl font-bold text-primary">2025</div>
+                  <div className="text-2xl font-bold text-primary">2026</div>
                   <div className="text-sm text-muted-foreground">Target Year</div>
                 </div>
                 <div className="text-center p-4 bg-secondary/50 rounded-xl">
@@ -222,8 +222,8 @@ const About = () => {
               </div>
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6">
                 <Users className="w-10 h-10 text-primary-foreground mx-auto mb-3" />
-                <h4 className="font-semibold text-primary-foreground">Industry Experience</h4>
-                <p className="text-sm text-primary-foreground/70 mt-1">Real-world knowledge & insights</p>
+                <h4 className="font-semibold text-primary-foreground">Expert Mentorship</h4>
+                <p className="text-sm text-primary-foreground/70 mt-1">D.C. Gupta & Harsh Gupta</p>
               </div>
             </div>
             <div className="mt-10">

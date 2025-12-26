@@ -189,8 +189,8 @@ const Index = () => {
               <SectionHeading
                 badge="Why Choose Us"
                 title="Your Success is Our Mission"
-                subtitle="At Gyan Gurukulam, we combine expertise, dedication, and innovative teaching methods to help you achieve your dreams."
-                centered={false}
+            subtitle="At Gyan, we combine expertise, dedication, and innovative teaching methods to help you achieve your dreams."
+            centered={false}
               />
               <ul className="space-y-4">
                 {[
