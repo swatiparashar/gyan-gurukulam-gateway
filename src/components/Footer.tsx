@@ -41,7 +41,7 @@ const Footer = () => {
               <img 
                 src={gyanLogo} 
                 alt="Gyan Gurukulam Logo" 
-                className="h-14 w-auto object-contain rounded-lg"
+                className="h-14 w-14 object-contain rounded-lg"
               />
               <div className="flex flex-col">
                 <div className="flex items-baseline gap-1">
