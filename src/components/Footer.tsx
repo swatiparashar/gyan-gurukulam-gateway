@@ -8,7 +8,7 @@ import {
   Youtube,
   Clock
 } from "lucide-react";
-import gyanLogo from "@/assets/gyan-logo.jpeg";
+import gyanLogo from "@/assets/gyan-book-logo.png";
 
 const Footer = () => {
   const quickLinks = [
