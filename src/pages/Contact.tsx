@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Our Location",
-      details: ["Avantika-II, Ramghat Road", "Aligarh, Uttar Pradesh"],
+      details: ["Gayatri Villa, Gyan Coaching Institute", "Avantika-2nd, Ramghat Road, Aligarh"],
     },
     {
       icon: Phone,
@@ -62,7 +62,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["info@gyancoaching.com"],
+      details: ["guptaharsh22@gmail.com", "dcgupta.gyan@gmail.com"],
       isEmail: true,
     },
     {
@@ -263,7 +263,7 @@ const Contact = () => {
           <div className="max-w-5xl mx-auto">
             <div className="bg-card rounded-3xl overflow-hidden shadow-card border border-border/50">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.1234567890123!2d78.0789!3d27.8974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDUzJzUwLjYiTiA3OMKwMDQnNDQuMCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.5!2d78.0789!3d27.8974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGayatri+Villa+Gyan+Coaching+Institute+Avantika+2nd+Ramghat+Road+Aligarh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -277,12 +277,12 @@ const Contact = () => {
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <span className="text-foreground font-medium">
-                    Avantika II, Ramghat Road, Aligarh, UP
+                    Gayatri Villa, Gyan Coaching Institute, Avantika-2nd, Ramghat Road, Aligarh
                   </span>
                 </div>
                 <Button variant="outline" asChild>
                   <a
-                    href="https://www.google.com/maps/search/Avantika+II+Ramghat+Road+Aligarh"
+                    href="https://www.google.com/maps/search/Gayatri+Villa+Gyan+Coaching+Institute+Avantika+2nd+Ramghat+Road+Aligarh"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
