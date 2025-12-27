@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { 
-  GraduationCap, 
   MapPin, 
   Phone, 
   Mail, 
@@ -9,6 +8,7 @@ import {
   Youtube,
   Clock
 } from "lucide-react";
+import gyanLogo from "@/assets/gyan-logo.jpeg";
 
 const Footer = () => {
   const quickLinks = [
@@ -37,16 +37,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <GraduationCap className="w-7 h-7 text-primary-foreground" />
-              </div>
+            <Link to="/" className="flex items-center gap-3">
+              <img 
+                src={gyanLogo} 
+                alt="Gyan Gurukulam Logo" 
+                className="h-14 w-auto object-contain rounded-lg"
+              />
               <div className="flex flex-col">
-                <span className="text-xl font-display font-bold">
-                  Gyan
-                </span>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-xl font-display font-bold">
+                    Gyan
+                  </span>
+                  <span className="text-lg font-bold text-primary" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
+                    गुरुकुलम्
+                  </span>
+                </div>
                 <span className="text-xs text-primary-foreground/70">
-                  A Premier Coaching for IIT-JEE & NEET
+                  For IIT-JEE | NEET | Foundation | Olympiads
                 </span>
               </div>
             </Link>
@@ -161,7 +168,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© {new Date().getFullYear()} Gyan Coaching. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Gyan गुरुकुलम्. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <Link to="/privacy" className="hover:text-primary-foreground transition-colors">
                 Privacy Policy

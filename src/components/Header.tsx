@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, GraduationCap } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import gyanLogo from "@/assets/gyan-logo.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,16 +25,23 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <GraduationCap className="w-6 h-6 lg:w-7 lg:h-7 text-primary-foreground" />
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src={gyanLogo} 
+              alt="Gyan Gurukulam Logo" 
+              className="h-12 lg:h-14 w-auto object-contain"
+            />
             <div className="flex flex-col">
-              <span className="text-lg lg:text-xl font-display font-bold text-foreground">
-                Gyan
-              </span>
+              <div className="flex items-baseline gap-1">
+                <span className="text-xl lg:text-2xl font-display font-bold text-primary">
+                  Gyan
+                </span>
+                <span className="text-lg lg:text-xl font-bold text-destructive" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
+                  गुरुकुलम्
+                </span>
+              </div>
               <span className="text-[10px] lg:text-xs text-muted-foreground font-medium -mt-1">
-                A Premier Coaching for IIT-JEE & NEET
+                For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
               </span>
             </div>
           </Link>

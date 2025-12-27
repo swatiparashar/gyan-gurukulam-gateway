@@ -81,10 +81,11 @@ const Index = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-slide-up">
-              Gyan
+              <span>Gyan</span>{" "}
+              <span className="text-warning" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>गुरुकुलम्</span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              A Premier Coaching for IIT-JEE & NEET
+              For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
             </p>
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
               VIII, IX, X, Foundation | XI, XII, Dropper
@@ -163,7 +164,7 @@ const Index = () => {
           <SectionHeading
             badge="Our Programs"
             title="Courses We Offer"
-            subtitle="Comprehensive coaching programs designed for your success in competitive exams"
+            subtitle="Comprehensive coaching programs designed for your success in competitive exams at Gyan गुरुकुलम्"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {courses.map((course, index) => (
