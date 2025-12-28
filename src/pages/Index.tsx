@@ -176,7 +176,7 @@ const Index = () => {
                   "Published Authors - Disha Publication",
                   "Weekly Scholarship Tests Every Sunday",
                   "Regular Batches for 2026 JEE/NEET",
-                  "Personalized Attention & Doubt Clearing",
+                  "Personalized Mentorship and Guidance",
                   "Comprehensive Study Material & Mock Tests",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
