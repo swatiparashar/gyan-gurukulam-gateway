@@ -11,7 +11,7 @@ const Faculty = () => {
     {
       name: "D.C. Gupta",
       qualification: "M.Tech - Director",
-      specialization: "Physics Educator",
+      specialization: "Physics HOD",
       experience: "28+ Years Teaching Experience",
       achievements: [
         "Author of IIT/NEET Books - Disha Publication, Delhi",
@@ -23,7 +23,7 @@ const Faculty = () => {
     {
       name: "Er. Harsh Gupta",
       qualification: "B.Tech (IIT Delhi) - Managing Director",
-      specialization: "Chemistry & Mathematics Expert",
+      specialization: "Chemistry & Mathematics HOD",
       experience: "Expert in JEE & NEET Chemistry + Mathematics",
       achievements: [
         "Introduced latest study material & methodology",
