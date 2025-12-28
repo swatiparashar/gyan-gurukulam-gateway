@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import FacultyCard from "@/components/FacultyCard";
 import { ArrowRight, Award, BookOpen, GraduationCap, Users } from "lucide-react";
+import dcGuptaImage from "@/assets/dc-gupta.jpeg";
+import harshGuptaImage from "@/assets/harsh-gupta.jpeg";
 
 const Faculty = () => {
   const faculty = [
@@ -13,6 +15,7 @@ const Faculty = () => {
       qualification: "M.Tech - Director",
       specialization: "Physics HOD",
       experience: "28+ Years Teaching Experience",
+      image: dcGuptaImage,
       achievements: [
         "Author of IIT/NEET Books - Disha Publication, Delhi",
         "Original approach in concept analysis",
@@ -25,6 +28,7 @@ const Faculty = () => {
       qualification: "B.Tech (IIT Delhi) - Managing Director",
       specialization: "Chemistry & Mathematics HOD",
       experience: "Expert in JEE & NEET Chemistry + Mathematics",
+      image: harshGuptaImage,
       achievements: [
         "Introduced latest study material & methodology",
         "Developed magical methods for Chemistry",
