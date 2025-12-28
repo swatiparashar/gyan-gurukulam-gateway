@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import TrustBadge from "@/components/TrustBadge";
-import CourseCard from "@/components/CourseCard";
 import {
   GraduationCap,
   Users,
@@ -13,10 +12,6 @@ import {
   Target,
   Lightbulb,
   BookOpen,
-  Atom,
-  Stethoscope,
-  Building,
-  Calculator,
   Medal,
   ArrowRight,
   Star,
@@ -25,37 +20,6 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  const courses = [
-    {
-      icon: Atom,
-      title: "IIT-JEE",
-      description: "Comprehensive preparation for JEE Main & Advanced",
-      features: ["Expert Faculty", "Regular Mock Tests", "Doubt Clearing Sessions"],
-      color: "blue" as const,
-    },
-    {
-      icon: Stethoscope,
-      title: "NEET",
-      description: "Complete medical entrance exam preparation",
-      features: ["Biology Focus", "NCERT Based", "Previous Year Papers"],
-      color: "green" as const,
-    },
-    {
-      icon: Building,
-      title: "AMU Entrance",
-      description: "Specialized coaching for AMU XIth entrance",
-      features: ["Pattern Analysis", "Time Management", "Expert Guidance"],
-      color: "orange" as const,
-    },
-    {
-      icon: Calculator,
-      title: "Foundation",
-      description: "Strong foundation for Class VIII, IX & X students",
-      features: ["Board Exam Prep", "Competitive Edge", "Regular Tests"],
-      color: "red" as const,
-    },
-  ];
-
   const stats = [
     { value: "1000+", label: "Students Trained" },
     { value: "28+", label: "Years Experience" },
@@ -80,15 +44,18 @@ const Index = () => {
               <span className="text-sm font-semibold">Scholarship Upto 100% Available!</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-slide-up">
-              <span>Gyan</span>{" "}
-              <span className="text-warning" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>गुरुकुलम्</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-4 leading-tight animate-slide-up">
+              <span className="block">Gyan</span>
+              <span className="text-warning underline underline-offset-4" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>गुरुकुलम्</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-semibold mb-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+              Coaching led by IITian
+            </p>
+            <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.15s" }}>
               For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
             </p>
-            <p className="text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              VIII, IX, X, Foundation | XI, XII, Dropper
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <span className="text-xl md:text-2xl font-semibold">VIII, IX, X, Foundation/Academics | XI, XII, Dropper</span>
               <br />
               Join India's finest Short-cut Methods & Techniques
             </p>
@@ -96,7 +63,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl" asChild>
                 <Link to="/contact">
-                  Enroll Now
+                  Contact Us
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -117,7 +84,7 @@ const Index = () => {
               <TrustBadge
                 icon={Award}
                 title="Upto 100% Scholarship"
-                description="Weekly tests every Sunday"
+                description="Every Sunday 2-3 PM"
               />
               <TrustBadge
                 icon={Trophy}
@@ -158,26 +125,36 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Courses Section */}
+      {/* Vision Section */}
       <section className="py-16 lg:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <SectionHeading
-            badge="Our Programs"
-            title="Courses We Offer"
-            subtitle="Comprehensive coaching programs designed for your success in competitive exams at Gyan गुरुकुलम्"
+            badge="Our Vision"
+            title="Shaping Future Leaders"
+            subtitle="At Gyan गुरुकुलम्, we envision creating a generation of confident, knowledgeable, and morally upright individuals who excel in their chosen fields."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {courses.map((course, index) => (
-              <CourseCard key={index} {...course} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Button variant="default" size="lg" asChild>
-              <Link to="/courses">
-                View All Courses
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-center hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Excellence in Education</h3>
+              <p className="text-muted-foreground">Providing world-class coaching with proven methodologies and expert guidance from IITians.</p>
+            </div>
+            <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-center hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="w-8 h-8 text-success" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Holistic Development</h3>
+              <p className="text-muted-foreground">Nurturing not just academic brilliance but also character, values, and life skills in every student.</p>
+            </div>
+            <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 text-center hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy className="w-8 h-8 text-warning" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">Proven Success</h3>
+              <p className="text-muted-foreground">28+ years of consistent results with thousands of students achieving their dreams.</p>
+            </div>
           </div>
         </div>
       </section>

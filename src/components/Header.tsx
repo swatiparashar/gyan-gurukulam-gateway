@@ -29,18 +29,16 @@ const Header = () => {
             <img 
               src={gyanLogo} 
               alt="Gyan Gurukulam Logo" 
-              className="h-12 w-12 lg:h-14 lg:w-14 object-contain"
+              className="h-14 w-14 lg:h-16 lg:w-16 object-contain"
             />
             <div className="flex flex-col">
-              <div className="flex items-baseline gap-1">
-                <span className="text-xl lg:text-2xl font-display font-bold text-primary">
-                  Gyan
-                </span>
-                <span className="text-lg lg:text-xl font-bold text-destructive" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
-                  गुरुकुलम्
-                </span>
-              </div>
-              <span className="text-[10px] lg:text-xs text-muted-foreground font-medium -mt-1">
+              <span className="text-xl lg:text-2xl font-display font-bold text-primary leading-tight">
+                Gyan
+              </span>
+              <span className="text-base lg:text-lg font-bold text-destructive underline underline-offset-2 -mt-1" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
+                गुरुकुलम्
+              </span>
+              <span className="text-[10px] lg:text-xs text-muted-foreground font-medium">
                 For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
               </span>
             </div>
@@ -73,7 +71,7 @@ const Header = () => {
               <span>9528220991</span>
             </a>
             <Button variant="cta" asChild>
-              <Link to="/contact">Enroll Now</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -119,7 +117,7 @@ const Header = () => {
                 </a>
                 <Button variant="cta" className="mx-4" asChild>
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                    Enroll Now
+                    Contact Us
                   </Link>
                 </Button>
               </div>
