@@ -41,17 +41,15 @@ const Footer = () => {
               <img 
                 src={gyanLogo} 
                 alt="Gyan Gurukulam Logo" 
-                className="h-14 w-14 object-contain rounded-lg"
+                className="h-16 w-16 object-contain rounded-lg"
               />
               <div className="flex flex-col">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-xl font-display font-bold">
-                    Gyan
-                  </span>
-                  <span className="text-lg font-bold text-primary" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
-                    गुरुकुलम्
-                  </span>
-                </div>
+                <span className="text-xl font-display font-bold leading-tight">
+                  Gyan
+                </span>
+                <span className="text-lg font-bold text-primary underline underline-offset-2 -mt-1" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
+                  गुरुकुलम्
+                </span>
                 <span className="text-xs text-primary-foreground/70">
                   For IIT-JEE | NEET | Foundation | Olympiads
                 </span>
@@ -144,14 +142,22 @@ const Footer = () => {
                   </a>
                 </div>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a
-                  href="mailto:info@gyancoaching.com"
-                  className="text-sm text-primary-foreground/80 hover:text-primary transition-colors"
-                >
-                  info@gyancoaching.com
-                </a>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div className="text-sm text-primary-foreground/80 space-y-1">
+                  <a
+                    href="mailto:guptaharsh22@gmail.com"
+                    className="block hover:text-primary transition-colors"
+                  >
+                    guptaharsh22@gmail.com
+                  </a>
+                  <a
+                    href="mailto:dcgupta.gyan@gmail.com"
+                    className="block hover:text-primary transition-colors"
+                  >
+                    dcgupta.gyan@gmail.com
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-primary shrink-0" />
