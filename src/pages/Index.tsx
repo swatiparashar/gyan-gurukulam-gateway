@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import TrustBadge from "@/components/TrustBadge";
+import gyanTextLogo from "@/assets/gyan-logo-text.jpeg";
 import {
   GraduationCap,
   Users,
@@ -44,10 +45,13 @@ const Index = () => {
               <span className="text-sm font-semibold">Scholarship Upto 100% Available!</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary-foreground mb-4 leading-tight animate-slide-up">
-              <span className="block">Gyan</span>
-              <span className="text-warning underline underline-offset-4" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>गुरुकुलम्</span>
-            </h1>
+            <div className="mb-4 animate-slide-up">
+              <img 
+                src={gyanTextLogo} 
+                alt="Gyan Gurukulam" 
+                className="h-20 md:h-28 lg:h-36 mx-auto object-contain"
+              />
+            </div>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-semibold mb-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>
               Coaching led by IITian
             </p>
