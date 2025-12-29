@@ -19,26 +19,32 @@ const FacultyCard = ({
 }: FacultyCardProps) => {
   return (
     <div className="group bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-      {/* Header with gradient */}
-      <div className="h-32 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDIwdjIwSDB6TTIwIDIwaDIwdjIwSDIweiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2">
-          <div className="w-24 h-24 rounded-full bg-card border-4 border-card flex items-center justify-center shadow-lg overflow-hidden">
-            {image ? (
-              <img src={image} alt={name} className="w-full h-full object-cover" />
-            ) : (
+      {/* Faculty Image */}
+      {image ? (
+        <div className="w-full h-56 overflow-hidden bg-secondary">
+          <img 
+            src={image} 
+            alt={name} 
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+      ) : (
+        <div className="h-32 bg-gradient-hero relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMCAwaDIwdjIwSDB6TTIwIDIwaDIwdjIwSDIweiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+            <div className="w-20 h-20 rounded-full bg-card border-4 border-card flex items-center justify-center shadow-lg overflow-hidden">
               <div className="w-full h-full bg-gradient-primary flex items-center justify-center">
-                <span className="text-3xl font-bold text-primary-foreground">
+                <span className="text-2xl font-bold text-primary-foreground">
                   {name.split(' ').map(n => n[0]).join('')}
                 </span>
               </div>
-            )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Content */}
-      <div className="pt-14 pb-6 px-6 text-center">
+      <div className="py-6 px-6 text-center">
         <h3 className="text-xl font-bold text-foreground mb-1">{name}</h3>
         <p className="text-sm font-medium text-primary mb-4">{qualification}</p>
         

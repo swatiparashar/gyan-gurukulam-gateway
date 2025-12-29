@@ -234,12 +234,12 @@ const Scholarship = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-4 text-primary-foreground/80">
                   <div>
-                    <div className="text-3xl font-bold text-primary-foreground">10:00</div>
-                    <div className="text-sm">AM Start Time</div>
+                    <div className="text-3xl font-bold text-primary-foreground">2:00</div>
+                    <div className="text-sm">PM Start Time</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-bold text-primary-foreground">2 Hrs</div>
-                    <div className="text-sm">Duration</div>
+                    <div className="text-3xl font-bold text-primary-foreground">3:00</div>
+                    <div className="text-sm">PM End Time</div>
                   </div>
                 </div>
               </div>
