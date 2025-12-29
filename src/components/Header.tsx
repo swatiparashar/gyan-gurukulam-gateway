@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import gyanLogo from "@/assets/gyan-book-logo.png";
+import gyanTextLogo from "@/assets/gyan-logo-text.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,17 +28,11 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
-              src={gyanLogo} 
+              src={gyanTextLogo} 
               alt="Gyan Gurukulam Logo" 
-              className="h-14 w-14 lg:h-16 lg:w-16 object-contain"
+              className="h-12 lg:h-14 object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-xl lg:text-2xl font-display font-bold text-primary leading-tight">
-                Gyan
-              </span>
-              <span className="text-base lg:text-lg font-bold text-destructive underline underline-offset-2 -mt-1" style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}>
-                गुरुकुलम्
-              </span>
               <span className="text-[10px] lg:text-xs text-muted-foreground font-medium">
                 For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
               </span>
