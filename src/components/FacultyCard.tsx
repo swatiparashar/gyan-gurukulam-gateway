@@ -21,11 +21,11 @@ const FacultyCard = ({
     <div className="group bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
       {/* Faculty Image */}
       {image ? (
-        <div className="w-full h-56 overflow-hidden bg-secondary">
+        <div className="w-full h-72 overflow-hidden bg-secondary flex items-center justify-center">
           <img 
             src={image} 
             alt={name} 
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-contain"
           />
         </div>
       ) : (

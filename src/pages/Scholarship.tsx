@@ -46,7 +46,7 @@ const Scholarship = () => {
 
   const testDetails = [
     { icon: Calendar, label: "Test Day", value: "Every Sunday" },
-    { icon: Clock, label: "Duration", value: "2 Hours" },
+    { icon: Clock, label: "Duration", value: "1 Hour" },
     { icon: Users, label: "Eligibility", value: "Class VIII-XII" },
     { icon: Target, label: "Subjects", value: "PCM/PCB Based" },
   ];
