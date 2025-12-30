@@ -249,9 +249,9 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <Link to="/scholarship">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXdI_QUxdUyJemx9MGVDbFKd5IiK6t3pL2PaPHRiaElnNnZA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                   Apply for Scholarship
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
