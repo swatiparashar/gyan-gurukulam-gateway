@@ -29,7 +29,7 @@ const Header = () => {
             <img 
               src={gyanLogo} 
               alt="Gyan Gurukulam Logo" 
-              className="h-14 w-14 lg:h-16 lg:w-16 object-contain"
+              className="h-16 w-16 lg:h-20 lg:w-20 object-contain"
             />
             <div className="flex flex-col">
               <span className="text-xl lg:text-2xl font-display font-bold text-primary leading-tight">
