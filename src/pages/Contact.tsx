@@ -1,8 +1,4 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
@@ -12,41 +8,10 @@ import {
   Mail,
   Clock,
   Send,
-  CheckCircle,
+  ArrowRight,
 } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    course: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Inquiry Submitted!",
-        description: "We'll contact you within 24 hours.",
-      });
-      setFormData({ name: "", phone: "", email: "", course: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   const contactInfo = [
     {
       icon: MapPin,
@@ -70,15 +35,6 @@ const Contact = () => {
       title: "Working Hours",
       details: ["Mon - Sat: 8:00 AM - 8:00 PM", "Sunday: 9:00 AM - 2:00 PM"],
     },
-  ];
-
-  const courses = [
-    "IIT-JEE (Main & Advanced)",
-    "NEET Preparation",
-    "AMU XIth Entrance",
-    "Foundation Course",
-    "Class X Board Exam",
-    "Olympiad Programs",
   ];
 
   return (
@@ -106,147 +62,61 @@ const Contact = () => {
       {/* Contact Section */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Contact Info */}
-            <div>
-              <SectionHeading
-                badge="Reach Us"
-                title="Get In Touch"
-                subtitle="We're always happy to hear from you. Reach out through any of these channels."
-                centered={false}
-              />
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {contactInfo.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-card rounded-2xl p-6 shadow-card border border-border/50"
-                  >
-                    <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4">
-                      <item.icon className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <h4 className="font-semibold text-foreground mb-2">{item.title}</h4>
-                    <div className="space-y-1">
-                      {item.details.map((detail, idx) => (
-                        <p key={idx} className="text-sm text-muted-foreground">
-                          {item.isPhone ? (
-                            <a href={`tel:${detail}`} className="hover:text-primary transition-colors">
-                              {detail}
-                            </a>
-                          ) : item.isEmail ? (
-                            <a href={`mailto:${detail}`} className="hover:text-primary transition-colors">
-                              {detail}
-                            </a>
-                          ) : (
-                            detail
-                          )}
-                        </p>
-                      ))}
-                    </div>
+          <div className="max-w-5xl mx-auto">
+            <SectionHeading
+              badge="Reach Us"
+              title="Get In Touch"
+              subtitle="We're always happy to hear from you. Reach out through any of these channels."
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              {contactInfo.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-2xl p-6 shadow-card border border-border/50 text-center"
+                >
+                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 mx-auto">
+                    <item.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
-                ))}
-              </div>
+                  <h4 className="font-semibold text-foreground mb-2">{item.title}</h4>
+                  <div className="space-y-1">
+                    {item.details.map((detail, idx) => (
+                      <p key={idx} className="text-sm text-muted-foreground">
+                        {item.isPhone ? (
+                          <a href={`tel:${detail}`} className="hover:text-primary transition-colors">
+                            {detail}
+                          </a>
+                        ) : item.isEmail ? (
+                          <a href={`mailto:${detail}`} className="hover:text-primary transition-colors">
+                            {detail}
+                          </a>
+                        ) : (
+                          detail
+                        )}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-card rounded-3xl p-8 shadow-card border border-border/50">
-              <h3 className="text-2xl font-display font-bold text-foreground mb-6">
-                Send Us a Message
+            {/* Enquiry CTA */}
+            <div className="bg-gradient-hero rounded-3xl p-8 md:p-12 text-center">
+              <h3 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-4">
+                Have a Question or Want to Enroll?
               </h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Full Name *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Enter your full name"
-                    required
-                    className="h-12"
-                  />
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                      Phone Number *
-                    </label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="Enter phone number"
-                      required
-                      className="h-12"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email Address
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Enter email address"
-                      className="h-12"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="course" className="block text-sm font-medium text-foreground mb-2">
-                    Interested Course *
-                  </label>
-                  <select
-                    id="course"
-                    name="course"
-                    value={formData.course}
-                    onChange={handleChange}
-                    required
-                    className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  >
-                    <option value="">Select a course</option>
-                    {courses.map((course) => (
-                      <option key={course} value={course}>
-                        {course}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell us about your requirements..."
-                    rows={4}
-                    className="resize-none"
-                  />
-                </div>
-                <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5" />
-                      Send Inquiry
-                    </>
-                  )}
-                </Button>
-              </form>
-              <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="w-4 h-4 text-success" />
-                <span>We typically respond within 24 hours</span>
-              </div>
+              <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+                Fill out our enquiry form and we'll get back to you within 24 hours with all the information you need.
+              </p>
+              <Button variant="hero" size="xl" asChild>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdkQnRK5W2lHrQw99cLhG_uZT9CEqBWkhgiqHaRK-PkLNwzFA/viewform?usp=publish-editor" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Send className="w-5 h-5" />
+                  Send Enquiry
+                </a>
+              </Button>
             </div>
           </div>
         </div>
