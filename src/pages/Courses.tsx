@@ -220,10 +220,10 @@ const Courses = () => {
                       ))}
                     </ul>
                     <Button variant="outline" className="mt-6 w-full" asChild>
-                      <Link to="/contact">
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkQnRK5W2lHrQw99cLhG_uZT9CEqBWkhgiqHaRK-PkLNwzFA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
                         Enquire Now
                         <ArrowRight className="w-4 h-4" />
-                      </Link>
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -246,10 +246,10 @@ const Courses = () => {
               and find the perfect program for your needs.
             </p>
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkQnRK5W2lHrQw99cLhG_uZT9CEqBWkhgiqHaRK-PkLNwzFA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
                 Book Free Counseling
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
