@@ -218,11 +218,11 @@ const Scholarship = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="hero" size="xl" asChild>
-                  <Link to="/contact">
-                    Register for Test
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
+              <Button variant="hero" size="xl" asChild>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXdI_QUxdUyJemx9MGVDbFKd5IiK6t3pL2PaPHRiaElnNnZA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+                  Register for Test
+                  <ArrowRight className="w-5 h-5" />
+                </a>
                 </Button>
               </div>
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-8 text-center">
