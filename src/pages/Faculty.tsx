@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import FacultyCard from "@/components/FacultyCard";
 import { ArrowRight, Award, BookOpen, GraduationCap, Users } from "lucide-react";
-import dcGuptaImage from "@/assets/dc-gupta.jpeg";
+import dcGuptaImage from "@/assets/dc-gupta-new.jpg";
 import harshGuptaImage from "@/assets/harsh-gupta.jpeg";
 
 const Faculty = () => {

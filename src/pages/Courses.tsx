@@ -52,8 +52,8 @@ const Courses = () => {
     },
     {
       icon: Building,
-      title: "AMU XIth Entrance",
-      description: "Specialized coaching for AMU Class 11 entrance examination",
+      title: "AMU IXth & XIth Entrance",
+      description: "Specialized coaching for AMU Class 9 and Class 11 entrance examinations",
       features: [
         "Pattern-Based Preparation",
         "Previous Year Papers",
@@ -62,8 +62,8 @@ const Courses = () => {
         "Interview Preparation",
       ],
       color: "orange" as const,
-      duration: "6-12 Months",
-      batch: "Class X Students",
+      duration: "2-3 Months",
+      batch: "Class VIII & X Students",
     },
     {
       icon: Calculator,

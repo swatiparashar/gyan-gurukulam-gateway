@@ -52,10 +52,10 @@ const Index = () => {
                 className="h-20 md:h-28 lg:h-36 mx-auto object-contain"
               />
             </div>
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-semibold mb-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            <p className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/90 font-bold mb-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>
               Coaching led by IITian
             </p>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-medium mb-4 animate-slide-up" style={{ animationDelay: "0.15s" }}>
               For IIT-JEE | NEET | Foundation | Olympiads | AMU Entrances
             </p>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
