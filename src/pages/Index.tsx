@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import TrustBadge from "@/components/TrustBadge";
 import gyanTextLogo from "@/assets/gyan-logo-text.jpeg";
+import ggstQr from "@/assets/ggst-qr.jpeg.asset.json";
 import {
   GraduationCap,
   Users,
@@ -77,6 +78,26 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
+
+            {/* GGST QR Code */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfXdI_QUxdUyJemx9MGVDbFKd5IiK6t3pL2PaPHRiaElnNnZA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-col items-center gap-2 mb-12 animate-slide-up group cursor-pointer"
+              style={{ animationDelay: "0.35s" }}
+            >
+              <div className="bg-card rounded-2xl p-3 shadow-lg border border-border/50 transition-transform duration-300 group-hover:scale-105">
+                <img
+                  src={ggstQr.url}
+                  alt="Apply For GGST - Scan the QR code to register for the Gyan Gurukulam Scholarship Test"
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
+                />
+              </div>
+              <span className="text-primary-foreground font-bold text-sm md:text-base tracking-wide underline underline-offset-4 decoration-primary-foreground/60 group-hover:decoration-primary-foreground">
+                Apply For GGST
+              </span>
+            </a>
 
             {/* Trust Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: "0.4s" }}>
