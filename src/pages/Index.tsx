@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import TrustBadge from "@/components/TrustBadge";
 import gyanTextLogo from "@/assets/gyan-logo-text.jpeg";
-import ggstQr from "@/assets/ggst-qr.jpeg.asset.json";
+import ggstQr from "@/assets/ggst-qr.jpeg";
 import {
   GraduationCap,
   Users,
@@ -89,7 +89,7 @@ const Index = () => {
             >
               <div className="bg-card rounded-2xl p-3 shadow-lg border border-border/50 transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src={ggstQr.url}
+                  src={ggstQr}
                   alt="Apply For GGST - Scan the QR code to register for the Gyan Gurukulam Scholarship Test"
                   className="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg"
                 />
