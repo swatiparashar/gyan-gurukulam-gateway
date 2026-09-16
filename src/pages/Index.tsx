@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import TrustBadge from "@/components/TrustBadge";
 import gyanTextLogo from "@/assets/gyan-logo-text.jpeg";
-import ggstQr from "@/assets/ggst-qr.jpeg.asset.json";
+import ggstQr from "@/assets/ggst-qr.jpeg";
 import {
   GraduationCap,
   Users,
